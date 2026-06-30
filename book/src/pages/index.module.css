@@ -1,0 +1,83 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+
+  .heroSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroContent {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .heroImage {
+    max-width: 100%;
+  }
+}
+
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 2rem; /* Add horizontal padding to move content from corners */
+}
+
+.heroContent {
+  flex: 1;
+  max-width: 50%;
+}
+
+.heroImage {
+  flex: 1;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.robotIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.2), 0 10px 10px -5px rgba(155, 89, 182, 0.1);
+  border: 1px solid var(--ifm-color-secondary-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.robotIconContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 30px -5px rgba(59, 130, 246, 0.3), 0 15px 15px -5px rgba(155, 89, 182, 0.2);
+}
+
+.robotIcon {
+  color: var(--ifm-color-primary);
+  transition: color 0.3s ease;
+}
+
+.robotIcon:hover {
+  color: var(--ifm-color-primary-dark);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}

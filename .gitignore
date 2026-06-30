@@ -1,0 +1,10 @@
+node_modules/
+book/node_modules/
+
+book/build/
+book/.docusaurus/
+
+**/__pycache__/
+*.pyc
+
+.env
