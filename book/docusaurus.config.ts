@@ -18,7 +18,7 @@ const config: Config = {
 
 
 
-  url: 'https://humanoid-book-hackathon.vercel.app/',
+  url: 'https://humanoid-robotics-book-hackathon-chi.vercel.app/',
 baseUrl: '/',
 
 
